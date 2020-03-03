@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>testarray</title>
+</head>
+<body>
+    <script>
+        var testarray = new Array("een","twee",3,"vier");
+        testarray.push(5);
+        document.write(testarray);
+        document.write("<br>" + typeof testarray[4]);
+        delete testarray[4];
+        document.write("<br>" + testarray);
+        testarray.unshift('nul')
+        document.write("<br>" + typeof testarray[0]);
+        testarray.shift();
+        document.write("<br>" + testarray);
+        testarray.splice(1,1)
+        document.write("<br>" + testarray);
+        testarray.splice(2,2);
+        document.write("<br>" + testarray);
+    </script>
+</body>
+</html>

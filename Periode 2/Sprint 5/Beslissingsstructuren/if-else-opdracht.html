@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        vraagcreditkaard = prompt("Heeft u een creditcard? ja of nee?");
+        vraagleefijd = prompt("Wat is uw leeftijd? ")
+        if(vraagcreditkaard == "ja" && vraagleefijd >= 18){
+            alert("Uw mag 1000 euro lenen")
+        }
+        else if(vraagleefijd >=18 && vraagcreditkaard == "nee"){
+            alert("Uw mag 500 euro lenen")
+        }
+        else{
+            alert("Uw mag geen geld lenen")
+        }
+    </script>
+</body>
+</html>

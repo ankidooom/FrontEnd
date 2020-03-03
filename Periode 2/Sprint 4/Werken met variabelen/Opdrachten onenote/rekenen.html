@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rekenmachine</title>
+</head>
+<body>
+    <script>
+        var getal1 = prompt("Voer de eerste getal in.");
+        var operator = prompt("plus, min, maal, delen?");
+        var getal2 = prompt("Voer de tweede getal in.");
+        var operatorPlus = "+";
+        if(operator == "plus"){
+            antwoord = eval(getal1 + operatorPlus + getal2);
+            document.write(getal1 + "+" + getal2 + "=" + antwoord);
+        }
+        if(operator == "min"){
+            var antwoord = getal1 - getal2;
+            document.write(getal1 + "-" + getal2 + "=" + antwoord);
+        }
+        if(operator == "maal"){
+            var antwoord = getal1 * getal2;
+            document.write(getal1 + "x" + getal2 + "=" + antwoord);
+        }
+        if(operator == "delen"){
+            var antwoord = getal1 / getal2;
+            document.write(getal1 + "/" + getal2 + "=" + antwoord);
+        }
+    </script>
+</body>
+</html>

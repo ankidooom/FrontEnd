@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab08</title>
+</head>
+<body>
+    <script>
+        var einddatum = prompt('Wat is het einddatum in: JJ-MM-DD? / Jaar-Maand-Datum');
+        var deadline = new Date(einddatum);
+        document.write('<br/>' + deadline );
+        var nu = Date.now();     // Start vanaf moment van input
+        var dag = 88640000;      // 24 uur => totaal seconden
+        var dagen = ((deadline - nu) / dag);
+        document.write("<br />Nog : " + dagen.toFixed(1) + ' te gaan...'); // Print tekst met dagen nog tot deadline
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        rolGebruiker = prompt("Wat is je rol?");
+        inlogcodeGebruiker = prompt("Wat is je inlogcode?");
+        switch (rolGebruiker){
+            case 'admin':
+                if(inlogcodeGebruiker == 'admin')
+                {
+                    document.write("<br>Welkom admin!")
+                }
+                else 
+                {
+                    document.write("<br>Code is ongeldig")
+                    break;
+                }
+                
+            case 'student':
+                if(inlogcodeGebruiker == 'student')
+                {
+                    document.write("<br>Welkom student!")
+                }
+                else 
+                {
+                    document.write("<br>Code is ongeldig")
+                    break;
+                }
+            default:
+                document.write("<br>Rol ongeldig")
+            }
+
+
+    </Script>
+</body>
+</html>

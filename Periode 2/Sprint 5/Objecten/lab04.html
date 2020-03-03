@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab</title>
+</head>
+<body>
+    <script>
+        var palet = new Array("rood","blauw","groen","geel","zwart");
+        document.write(palet)
+        var nieuwekleur = prompt("type een nieuwe kleur in: ");
+        palet.push(nieuwekleur);
+        document.write("<br>" + palet);
+        var nieuwekleur = prompt("Type een nieuwe kleur in: ")
+        palet.unshift(nieuwekleur);
+        document.write("<br>" + palet);
+        palet.sort();
+        document.write("<br>" + palet);
+        palet2 = palet.splice(3,6)
+        document.write("<br>" + palet);
+        document.write("<br>" + palet2)
+        palet3 = palet;
+        document.write("<br>" + palet3)
+    </script>
+</body>
+</html>

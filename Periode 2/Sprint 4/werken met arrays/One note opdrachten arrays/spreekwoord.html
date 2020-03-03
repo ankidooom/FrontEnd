@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>spreekwoord</title>
+</head>
+<body>
+    <script>
+
+        // array met dagen en laat de nummer zien van welke dag het is dus bijvoorbeeld 4 is donderdag 6 zaterdag rtc
+        var weekdag = new Array();
+        weekdag[1] = "Maandag";
+        weekdag[2] = "Dinsdag";
+        weekdag[3] = "Woensdag";
+        weekdag[4] = "Donderdag";
+        weekdag[5] = "Vrijdag";
+        weekdag[6] = "Zaterdag";
+        weekdag[7] = "Zondag";
+
+        var spreekWoorden = new Array();
+        spreekWoorden[1] = "Eigen haard is goud waard";
+        spreekWoorden[2] = "Haastige spoed is zelden goed";
+        spreekWoorden[3] = "Beter laat dan nooit";
+        spreekWoorden[4] = "Wie het laatst lacht, lacht het best";
+        spreekWoorden[5] = "De morgenstond heeft goud in de mond";
+        spreekWoorden[6] = "Zoals het klokje thuis tikt, tikt het nergens";
+        spreekWoorden[7] = "Oost west, thuis best";
+
+        var d = new Date();
+        var n = d.getDay();
+
+        switch(n) {
+        case 1:
+             document.write("Het is vandaag " + weekdag[n] + "<br>De tip van de dag is: "+ spreekWoorden[1]);
+        break;
+        case 2:
+            document.write("Het is vandaag " + weekdag[n] + "<br>De tip van de dag is: "+ spreekWoorden[2]);
+        break;
+        case 3:
+            document.write("Het is vandaag " + weekdag[n] + "<br>De tip van de dag is: "+ spreekWoorden[3]);
+        break;
+        case 4:
+            document.write("Het is vandaag " + weekdag[n] + "<br>De tip van de dag is: "+ spreekWoorden[4]);
+        break;
+        case 5:
+            document.write("Het is vandaag " + weekdag[n] + "<br>De tip van de dag is: "+ spreekWoorden[5]);
+        break;
+        case 6:
+            document.write("Het is vandaag " + weekdag[n] + "<br>De tip van de dag is: "+ spreekWoorden[6]);
+        break;
+        case 7:
+            document.write("Het is vandaag " + weekdag[n] + "<br>De tip van de dag is: "+ spreekWoorden[7]);
+        break;
+        }
+    </script>
+</body>
+</html>

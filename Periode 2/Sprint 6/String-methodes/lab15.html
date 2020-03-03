@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab 15</title>
+</head>
+<body>
+    <h1>lab 15</h1>
+    <h2>vul waarden in:</h2>
+    <input name="vervang1" type="text" id="verv1">
+    <input name="vervang2" type="text" id="verv2">
+    <button onclick="vervangen()">vervangen</button>
+    <h2 id="rest">resultaat: </h2>
+    <script>
+
+
+        var tekst = "Dit document is een lang document maar ook een simpel document"
+
+        document.getElementById("rest").innerHTML = "resultaat: " + tekst;
+        
+        function vervangen(){
+            var ver1 = document.getElementById("verv1").value;
+            var ver2 = document.getElementById("verv2").value;
+            tekst = tekst.replace(ver1, ver2);
+            document.getElementById("rest").innerHTML = "resultaat: " + tekst;
+        }
+    </script>
+</body>
+</html>

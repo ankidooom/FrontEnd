@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De for lus</title>
+</head>
+<body>
+    <script>
+        //opgave 69
+        for(x = 0; x < 3; x++) { 
+            document.write("<br>Dit is lus: " + x);
+        }
+
+        //Opgave 70
+        var student = new Array(
+            'Zakaria','Albert','Hamsa','Mike','Pieter','Harry');
+            for(x = 0; x < student.length; x++)
+            {
+                document.write("<br>Element " + x + " is " + student[x])
+            }
+
+        //Opgave 71
+        var student = new Array(
+            'Zakaria','Albert','Hamsa','Mike','Pieter','Harry');
+            for(x = 0; x < student.length; x++)
+            {
+                document.write("<br>Element " + x + " is " + student[x])
+                x += 1;
+            }
+
+        //Opgave 72
+
+        var tekst = "Hij lijkt een beetje op Nelson Mandela.";
+        lengte = tekst.length;
+        spaties = 0;
+        document.write("<br>")
+        for (x = 0; x < lengte; x++) 
+        {
+            teken = tekst.charAt(x);
+            document.write(teken);
+            if  (teken == " "){
+                spaties++;
+            }
+        }
+        document.write("<br>Tekst bevat " + spaties + " spaties<br>");
+
+        //Opgave 73
+        aantalA = 0;
+        aantalE = 0;
+        aantalI = 0;
+        aantalO = 0;
+        aantalU = 0;
+        for (x = 0; x < lengte; x++) 
+        {
+            teken = tekst.charAt(x);
+            document.write(teken);
+            if  (teken == "a"){
+                aantalA++;
+            }
+            else if  (teken == "e"){
+                aantalE++;
+            }
+            else if  (teken == "i"){
+                aantalI++;
+            }
+            else if  (teken == "o"){
+                aantalO++;
+            }
+            else if  (teken == "u"){
+                aantalU++;
+            }
+        }
+        document.write("<br>Aantal a's " + aantalA);
+        document.write("<br>Aantal e's " + aantalE);
+        document.write("<br>Aantal i's " + aantalI);
+        document.write("<br>Aantal o's " + aantalO);
+        document.write("<br>Aantal u's " + aantalU);
+
+
+        //vaardigheid-lab 11
+        var getal = new Array();
+        getal[0] = 'nul';
+        getal[1] = 'een';
+        getal[2] = 'twee';
+        getal[3] = 'drie';
+        getal[4] = 'vier';
+        getal[5] = 'vijf';
+        getal[6] = 'zes';
+        getal[7] = 'zeven';
+        getal[8] = 'acht';
+        getal[9] = 'negen';
+        telefoonnummergebruiker = prompt("Wat is je telefoonnummer");
+        getallengte = telefoonnummergebruiker.length;
+        cijfers = telefoonnummergebruiker.charAt(x);
+        document.write(telefoonnummergebruiker);
+        for (x = 0; x < getallengte; x++) 
+        {   
+            cijfers = telefoonnummergebruiker.charAt(x);
+            
+            if(cijfers == 0)
+            {
+                document.write("<br>" + getal[0]);
+            }
+            else if (cijfers == 1)
+            {
+                document.write("<br>" + getal[1]);
+            }
+            else if (cijfers == 2)
+            {
+                document.write("<br>" + getal[2]);
+            }
+            else if (cijfers == 3)
+            {
+                document.write("<br>" + getal[3]);
+            }
+            else if (cijfers == 4)
+            {
+                document.write("<br>" + getal[4]);
+            }
+            else if (cijfers == 5)
+            {
+                document.write("<br>" + getal[5]);
+            }
+            else if (cijfers == 6)
+            {
+                document.write("<br>" + getal[6]);
+            }
+            else if (cijfers == 7)
+            {
+                document.write("<br>" + getal[7]);
+            }
+            else if (cijfers == 8)
+            {
+                document.write("<br>" + getal[8]);
+            }
+            else if (cijfers == 9)
+            {
+                document.write("<br>" + getal[9]);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Voorwaardelijke Operator</h1>
+    <script>
+        var vraag = 'Hoeveel is 20 + 60 ?'; 
+        var antwoord = 80; 
+        var goed = '<h2> Prima, ga zo door! </h2>'; 
+        var fout = '<h2> Jammer, volgende keer beter !</h2>'; 
+        var antwoordUser = prompt(vraag);
+        if (antwoordUser == antwoord){
+            document.write(goed);
+        }
+        else{
+            document.write(fout);
+        }
+    </script>
+</body>
+</html>

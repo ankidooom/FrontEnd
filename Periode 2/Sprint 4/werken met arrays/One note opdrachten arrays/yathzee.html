@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Yathzee</title>
+</head>
+<body>
+    <button onclick="Gooien()">gooi dobbelstenen</button>
+    <script>
+         function Gooien() {
+             var dobbelsteen = new Array();
+             dobbelsteen[0] = Math.floor((Math.random() * 6) + 1);
+             dobbelsteen[1] = Math.floor((Math.random() * 6) + 1);
+             dobbelsteen[2] = Math.floor((Math.random() * 6) + 1);
+             dobbelsteen[3] = Math.floor((Math.random() * 6) + 1);
+             dobbelsteen[4] = Math.floor((Math.random() * 6) + 1);
+             dobbelsteen[5] = "+";
+             totaal = eval(dobbelsteen[0] + dobbelsteen[5] + dobbelsteen[1] + dobbelsteen[5] + dobbelsteen[2] + dobbelsteen[5] + dobbelsteen[3] + dobbelsteen[5] + dobbelsteen[4]);
+             document.write(dobbelsteen[0] + "<br>" + dobbelsteen[1] + "<br>" + dobbelsteen[2] + "<br>" + dobbelsteen[3] + "<br>" + dobbelsteen[4]);
+             document.write("<br>" + totaal);
+         }
+    </script>
+</body>
+</html>
