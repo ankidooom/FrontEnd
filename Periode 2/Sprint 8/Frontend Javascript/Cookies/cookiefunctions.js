@@ -25,3 +25,7 @@ function leesCookie(naam){
 	}
 	return null;
 }
+function verwijderCookie(){
+	document.cookie = "cookiename= ; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+	document.write("U bent uitgelogf en cookies zijn verwijderd")
+}

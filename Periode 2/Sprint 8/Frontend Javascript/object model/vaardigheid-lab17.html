@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 17</title>
+</head>
+<body>
+    <script>
+        var aantalLetterinLanden
+        var landen = new Array("amsterdam", "barcelona", "londen","parijs","berlijn","antwerpen","rome","madrid");
+        var randomLand = landen[Math.floor(Math.random() * landen.length)];
+        for (i = 0; i < randomLand.length; i++) {
+            aantalLetterinLanden += "?";
+            }
+        var landHidden = randomLand.replace(/amsterdam|barcelona|londen|parijs|berlijn|antwerpen|rome|madrid/, aantalLetterinLanden); 
+        document.write(landHidden);
+    </script>
+</body>
+</html>
